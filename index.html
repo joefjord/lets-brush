@@ -23,25 +23,22 @@
         }
 
          /* Styling headers */
-header {
-    width: 100%;
-    height: auto;
-    min-height: 495px; /* Adjust based on the mobile image's aspect ratio */
-    background-image: url(images/LetsBrushMobileHeader.png);
-    background-size: cover; /* Ensure the image covers the header area */
-    background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
-}
-
-@media screen and (min-width: 431px) {
-    header {
-        height:auto;
-        min-height: 600px; /* Adjust based on the desktop image's aspect ratio */
-        background-image: url(images/LetsBrushDesktopHeader.png);
-        /* background-size, background-repeat, and background-position
-           are inherited from the base style, no need to repeat unless they change */
-    }
-}
+            header {
+                width: 100%;
+                height: auto;
+                min-height: 495px;
+                background-image: url(images/LetsBrushMobileHeader.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+    @media screen and (min-width: 431px) {
+        header {
+            height: auto;
+                min-height: 900px;
+            background-image: url(images/LetsBrushDesktopHeader.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
         
     /* Your styles for screens 431px wide and above */
 }
