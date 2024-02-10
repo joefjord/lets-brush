@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let's Brush!</title>
     <style>
+        /* Reset */
+        margin, padding {
+            0;
+        }
+
         /* SVG Files */
         svg {
             width: 100%; 
@@ -23,14 +28,14 @@
                 height: auto;
                 min-height: 495px;
                 background-image: url(images/LetsBrushMobileHeader.png);
-                background-size: cover;
+                background-size: contain;
             }
     @media screen and (min-width: 431px) {
         header {
             height: auto;
                 min-height: 900px;
             background-image: url(images/LetsBrushDesktopHeader.png);
-            background-size: cover;
+            background-size: contain;
         }
         
     /* Your styles for screens 431px wide and above */
