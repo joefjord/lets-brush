@@ -27,26 +27,19 @@
             header {
                 width: 100%;
                 height: auto;
-                background-image: url(images/LetsBrushMobileHeader.png);
-                background-size: contain;
-                background-repeat: no-repeat;
             }
     @media screen and (min-width: 431px) {
         header {
             height: auto;
-            background-image: url(images/LetsBrushDesktopHeader.png);
-            background-size: contain;
-            background-repeat: no-repeat;
         }
-        
-    /* Your styles for screens 431px wide and above */
+    /* styles for screens 431px wide and above */
 }
             
     </style>
 </head>
 <body>
     <header>
-        
+        <img id="headerImage" src="images/LetsBrushMobileHeader.png" alt="Header Image" style="width: 100%; height: auto;">
     </header> 
     <button id="startButton">Start</button>
     <audio id="audioElement" src="https://cdn.freesound.org/previews/723/723002_5674468-lq.mp3"></audio>
@@ -122,6 +115,18 @@
         }
     });
 });
+    </script>
+    <script>
+        function checkWindowSize() {
+            var imgSrc = window.innerWidth > 430 ? "images/LetsBrushDesktopHeader.png" : "images/LetsBrushMobileHeader.png";
+            document.getElementById('headerImage').src = imgSrc;
+        }
+    
+        // Run the function on initial load
+        checkWindowSize();
+    
+        // Add the event listener for window resize
+        window.addEventListener('resize', checkWindowSize);
     </script>
 </body>
 </html>
