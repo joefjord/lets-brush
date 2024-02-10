@@ -1,0 +1,11 @@
+svg {
+    width: 100%; /* Example to make the SVG responsive */
+    max-width: 200px; /* Maximum width based on the SVG's original size */
+}
+
+.st0 {
+  fill:#EC008C;
+}
+.st1 {
+  fill:black;
+}
