@@ -1,10 +1,14 @@
+<!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let's Brush!</title>
     <style>
+        /* SVG Files */
         svg {
-            width: 100%; /* Example to make the SVG responsive */
-            max-width: 200px; /* Maximum width based on the SVG's original size */
+            width: 100%; 
+            max-width: 200px; 
         }
         .st0 {
         fill:#EC008C;
@@ -12,11 +16,31 @@
         .st1 {
         fill:black;
         }
+
+         /* Styling headers */
+            header {
+                width: 100%;
+                height: auto;
+                min-height: 495px;
+                background-image: url(images/LetsBrushMobileHeader.png);
+                background-size: cover;
+            }
+    @media screen and (min-width: 431px) {
+        header {
+            height: auto;
+                min-height: 900px;
+            background-image: url(images/LetsBrushDesktopHeader.png);
+            background-size: cover;
+        }
+        
+    /* Your styles for screens 431px wide and above */
+}
+            
     </style>
 </head>
 <body>
     <header>
-
+        
     </header> 
     <button id="startButton">Start</button>
     <audio id="audioElement" src="https://cdn.freesound.org/previews/723/723002_5674468-lq.mp3"></audio>
