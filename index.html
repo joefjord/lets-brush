@@ -57,31 +57,30 @@
                 width: 100%;
                 height: auto;
             }
-    @media screen and (min-width: 431px) {
-        header {
-            height: auto;
-        }
-        
-        main {
-            width: 100%;
-            display: block;
-        }
+            @media screen and (min-width: 431px) {
+    main {
+        display: flex;
+        flex-direction: row; /* Align children side by side */
+        justify-content: center; /* Center the children horizontally */
+        align-items: center; /* Align the children vertically */
+    }
 
-        svg {
-            display: inline;
-            fill:black; 
-            max-width: 40%;
-            
-        }
+    .svg-wrapper, #startButton {
+        max-width: none; /* Reset or adjust max-width as needed */
+        margin: 0 10px; /* Add some space between the elements */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #startButton svg {
-            display: inline;
-            fill:black; 
-            max-width: 150px;
-           
-        }
+    svg {
+        width: auto; /* Adjust width as needed for your design */
+    }
 
-    /* styles for screens 431px wide and above */
+    #startButton svg {
+        /* Ensure the start button SVG is not stretched or shrunk */
+        width: 100px; /* Adjust based on the actual size you want */
+    }
 }
             
     </style>
