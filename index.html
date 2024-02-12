@@ -23,6 +23,14 @@
         fill:black;
         }
 
+        #startButton svg {
+            fill:black;
+        }
+
+        #startButton:hover svg{
+            fill:#a900ec;
+        }
+
          /* Styling headers */
             header {
                 width: 100%;
@@ -41,7 +49,11 @@
     <header>
         <img id="headerImage" src="images/LetsBrushMobileHeader.png" alt="Header Image" style="width: 100%; height: auto;">
     </header> 
-    <button id="startButton">Start</button>
+    <button id="startButton" style="background:none; border:none; padding:0;">
+        <svg src="images/StartButton.svg" width="200" height="200" viewBox="0 0 24 24">
+        </svg>
+    
+    </button>
     <audio id="audioElement" src="https://cdn.freesound.org/previews/723/723002_5674468-lq.mp3"></audio>
 
     <div id="svgContainer">
