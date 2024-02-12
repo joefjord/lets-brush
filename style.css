@@ -1,25 +1,3 @@
-.st0 {
-  fill:#EC008C;
-}
-.st1 {
-  fill:black;
-}
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
-.svg-wrapper {
-  width: fit-content; /* Or specify a width if needed */
-  margin: 0 auto;
-  padding-bottom: 25px; /* Adjust or remove padding as needed */
-}
 
-svg {
-  width: 100%;
-  max-width: 250px; /* Adjust as needed */
-  /* margin and padding styles for svg can be adjusted or moved to .svg-wrapper as needed */
-}
