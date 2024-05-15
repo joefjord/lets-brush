@@ -43,6 +43,12 @@
         #startButton:hover svg {
             fill: #a900ec;
         }
+        /* styling video */
+        #videoContainer {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
 
         /* Styling headers */
         header {
@@ -181,7 +187,7 @@
                 // Load random video
                 const randomVideo = videos[Math.floor(Math.random() * videos.length)];
                 console.log(`Loading video: ${randomVideo}`);
-                document.getElementById('videoContainer').innerHTML = `<video id="videoElement" controls><source src="${randomVideo}" type="video/mp4"></video>`;
+                document.getElementById('videoContainer').innerHTML = `<video id="videoElement"><source src="${randomVideo}" type="video/mp4"></video>`;
                 const videoElement = document.getElementById('videoElement');
 
                 // Add error event listener to the video element
